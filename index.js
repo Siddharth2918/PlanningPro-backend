@@ -18,7 +18,7 @@ app.use('/tasks', taskRoutes);
 app.use('/dayPlans', dayPlanRoutes);
 
 app.get('/', (req, res)=>{
-    res.send('hello');
+    return res.send('hello');
 })
 
 app.listen(PORT, ()=>{
