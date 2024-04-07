@@ -13,7 +13,7 @@ mongoose.connect(URI);
 const app=express();
 const PORT=3000;
 app.use(bodyParser());
-app.use(cors({origin: "https://planning-pro.vercel.app"}));
+app.use(cors());
 app.use('/users', userRoutes);
 app.use('/tasks', taskRoutes);
 app.use('/dayPlans', dayPlanRoutes);
