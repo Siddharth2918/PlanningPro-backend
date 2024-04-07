@@ -18,9 +18,11 @@ app.use('/tasks', taskRoutes);
 app.use('/dayPlans', dayPlanRoutes);
 
 app.get('/', (req, res)=>{
-    return res.send('hello');
+    return res.status(200).json('hello');
 })
 
 app.listen(PORT, ()=>{
     console.log(`Server running on http://localhost:${PORT}`);
 })
+
+module.exports = app;
