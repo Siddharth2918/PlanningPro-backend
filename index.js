@@ -6,7 +6,7 @@ import dayPlanRoutes from './routes/DayPlanRoutes.js';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-const URI=process.env.URI;
+const URI=`mongodb+srv://siddharth0295:NuTIkiYo4sfxDcUT@cluster0.efzfuyl.mongodb.net/PlanningPro`;
 mongoose.connect(URI);
 
 
